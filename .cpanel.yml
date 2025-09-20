@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/unhscoke/public_html/
+    - /bin/rsync -a --delete --exclude '.git' ./public_html/ $DEPLOYPATH
